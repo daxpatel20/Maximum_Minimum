@@ -1,0 +1,158 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center; /* Horizontally center */
+  align-items: center;     /* Vertically center */
+  background-color: #f0f4f8; /* Optional: light background */
+}
+
+.container {
+  max-width: 550px;
+  background: linear-gradient(to right, #2c3e50, #3498db);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  color: white;
+  text-align: center;
+}
+
+.wrapper {
+  padding: 30px 15px;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  margin-top: 40px;
+}
+
+.bg-image {
+  background-image: url("https://wallpapercat.com/w/full/8/e/4/945846-2160x3840-mobile-4k-matte-black-background-image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.glass-card {
+  max-width: 500px;
+  height: 360px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(5px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.5),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.1),
+    inset 0 0 0px 0px rgba(255, 255, 255, 0);
+  position: relative;
+  overflow: hidden;
+}
+
+.glass-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg,
+      transparent,
+      rgba(255, 255, 255, 0.8),
+      transparent);
+}
+
+.glass-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 100%;
+  background: linear-gradient(180deg,
+      rgba(255, 255, 255, 0.8),
+      transparent,
+      rgba(255, 255, 255, 0.3));
+}
+
+.input-box {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid #0d1f2f;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.input-box:focus {
+  border-color: #28a745;
+  box-shadow: 0 0 5px #28a745;
+}
+
+.input-box.highlight {
+  background-color: #000000;
+  color: white;
+}
+
+
+.reduius {
+  border-radius: 5px;
+}
+
+.btn {
+  border-radius: 30px;
+  padding: 10px 20px;
+  font-weight: bold;
+  background-color: #000000;
+  color: #fff;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.btn:hover {
+  background-color: rgb(255, 255, 255);
+  color: #000000;
+}
+
+
+
+#ans {
+  color: #ffffff;
+  font-size: 24px;
+}
+
+.width {
+  width: 365px;
+}
+
+
+.input-box {
+  width: 60px;
+  text-align: center;
+  padding: 5px;
+  border-radius: 8px;
+}
+
+.highlight:focus
+ {
+  background-color: yellow;
+  border: 2px solid rgb(0, 251, 255);
+}
+
+.bg-image {
+  background: linear-gradient(to right, #2c3e50, #4ca1af);
+  padding: 40px;
+  border-radius: 0px;
+}
+
+
+@media (max-width: 576px) {
+  .input-box {
+    width: 50px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+}
